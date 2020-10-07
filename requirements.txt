@@ -40,10 +40,6 @@ cloudpickle==0.5.3
 colorama==0.3.9
 colored==1.4.2
 comtypes==1.1.4
-conda==4.8.3
-conda-build==3.10.5
-conda-package-handling==1.6.0
-conda-verify==2.0.0
 confuse==1.1.0
 conllu==2.3.2
 contextlib2==0.5.5
