@@ -131,7 +131,6 @@ lxml==4.2.1
 Markdown==3.2.2
 markov-clustering==0.0.6.dev0
 matplotlib==3.2.1
-missingno==0.4.2
 mkl-fft==1.0.0
 mkl-random==1.0.1
 more-itertools==4.1.0
