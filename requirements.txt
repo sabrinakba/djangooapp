@@ -64,7 +64,7 @@ datashape==0.5.4
 decorator==4.3.0
 definitions==0.2.0
 defusedxml==0.6.0
-distributed==1.21.8
+setuptools==0.7.3
 dj-database-url==0.5.0
 Django==3.0.7
 django-heroku==0.3.1
