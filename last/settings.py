@@ -25,7 +25,7 @@ SECRET_KEY = 'an#84^kgw!ci9nmx@7xszu*i$t71+d@ph*q6*711-f=uc43)xd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fathomless-ocean-56174.herokuapp.com','127.0.0.1']
 
 
 # Application definition
