@@ -130,7 +130,6 @@ locket==0.2.0
 lxml==4.2.1
 Markdown==3.2.2
 markov-clustering==0.0.6.dev0
-MarkupSafe==1.0
 matplotlib==3.2.1
 mccabe==0.6.1
 menuinst==1.4.14
