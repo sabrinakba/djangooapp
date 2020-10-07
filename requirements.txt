@@ -131,7 +131,6 @@ lxml==4.2.1
 Markdown==3.2.2
 markov-clustering==0.0.6.dev0
 matplotlib==3.2.1
-mccabe==0.6.1
 menuinst==1.4.14
 missingno==0.4.2
 mistune==0.8.3
