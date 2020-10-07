@@ -132,7 +132,6 @@ Markdown==3.2.2
 markov-clustering==0.0.6.dev0
 matplotlib==3.2.1
 missingno==0.4.2
-mistune==0.8.3
 mkl-fft==1.0.0
 mkl-random==1.0.1
 more-itertools==4.1.0
