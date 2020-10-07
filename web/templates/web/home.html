@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <title>Search Box Design</title>
+    {% load static %}
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="{% static 'web/styll.css' %}" type = "text/css"/>
+   
+    
+   
+</head>
+<style>
+body {
+  background-image: url({% static 'web/255.jpg' %}) ; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  
+  
+}
+</style> 
+<h1 style="color:white;font-size:35px;text-align:center">Stop wasting your time and get the most important information about Covid-19 </h1>
+
+
+<div class="divv">
+<div class="container" style="margin-top:10px">
+   
+    <br><br>
+
+<form method="post" id="indexForm" data-courses-url="{% url 'ajax_load_courses' %}">
+    {% csrf_token %}
+   <label>Task</label>
+   <select name="programming" id="programming" class="form-control">
+       <option value="">select task</option>
+       {% for i in program %}
+       <option value="{{ i.id }}">{{ i.name }}</option>
+       {% endfor %}
+
+   </select>
+   <label>question</label>
+
+   <select name="courses" id="courses" class="form-control">
+       
+       
+
+   </select>
+   
+
+</form>
+</div>
+<br> <br>
+
+<form action="add">
+
+    <div class="wrapper">
+     <input type="number" class="inptt" placeholder="number of sentences" 
+    name="num">
+    <input type="text" id="tt" class="input" placeholder="what are you looking for ?" name="query">
+     <input type="submit" value="search" <div class="searchbtn"></div></input>
+    
+</div>
+</form>
+</div>
+
+ <div class="wrapper2" style="visibility: hidden" id="wrap" style="overflow:scroll;overflow-y:scroll;overflow-x:hidden;">
+    
+    <input type="text" id="clic" class="inp" readonly="readonly" 
+    ></input></div>
+   
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    
+
+    $("#programming").change(function () {
+    	$("#wrap").css("visibility","hidden");
+        var url = $("#indexForm").attr("data-courses-url");  // get the url of the `load_cities` view
+        var programmingId = $(this).val();  // get the selected country ID from the HTML input
+
+        $.ajax({                       // initialize an AJAX request
+            url: url,                    // set the url of the request (= /persons/ajax/load-cities/ )
+            data: {
+                'programming': programmingId       // add the country id to the GET parameters
+            },
+            success: function (data) {   // `data` is the return of the `load_cities` view function
+                $("#courses").html(data);  // replace the contents of the city input with the data that came from the server
+                /*
+
+                let html_data = '<option value="">---------</option>';
+                data.forEach(function (city) {
+                    html_data += `<option value="${city.id}">${city.name}</option>`
+                });
+                console.log(html_data);
+                $("#id_city").html(html_data);
+
+                */
+            }
+        });
+           
+
+    });
+    $("#courses").change(function () {
+
+    	
+         var cour=$("#courses option:selected").text();
+         
+     		 
+           
+            //if(cour == 'Immune response and immunity for covid-19'){
+            	//$("#wrap").css("visibility","visible");
+            	$("#tt").val(cour)
+            	//}
+        
+        //else{
+        //	$("#wrap").css("visibility","visible");
+          //  $("#clic").val('null')
+        //}
+
+         // get the selected country ID from the HTML input
+
+    });
+   
+       
+</script>
+
+
+</body>
+
+</html>

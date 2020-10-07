@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <title>Search Box Design</title>
+    {% load static %}
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="{% static 'web/styll.css' %}" type = "text/css"/>
+   
+    
+   
+</head>
+<style>
+body {
+  background-image: url({% static 'web/25.jpg' %}) ; 
+  
+  
+}
+
+</style>
+{% block content %}
+<h1 style="color:white;font-size:50px;text-align:center">Summary</h1>
+
+
+
+<div class="result"  style="overflow:scroll;overflow-y:scroll;overflow-x:hidden;">
+
+ 
+  		<p style="font-size:18px;">  {{content}} </p><br>
+  	
+
+   
+</div>
+
+{% endblock %}
+</body>
+</html>
+

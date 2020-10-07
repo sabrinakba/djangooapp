@@ -1,0 +1,147 @@
+.divv { 
+position: absolute;
+top: 15%;
+height: 330px;
+width: 86%;
+  left: 8%;
+  background-color:rgba(255,255,255,1);
+  background-position:center; 
+  background-repeat:no-repeat; 
+  padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+} 
+.sent { 
+position: absolute;
+top: 55%;
+height: 15px;
+width: 80%;
+left: 6%;
+  background-color:rgba(255,255,255,1);
+  background-position:center; 
+  background-repeat:no-repeat; 
+  padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+} 
+.result { 
+position: absolute;
+top: 12%;
+height: 800px;
+width: 98%;
+  left: 1%;
+  background-color:rgba(255,255,255,1);
+
+  padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+} 
+
+.wrapper{
+	position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0,0.6);
+    max-width: 50000px;
+    width: 1150px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.wrapper3{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0,0.6);
+    max-width: 50000px;
+    width: 3050px;
+    padding: 10px;
+    display: flex;
+    height: 300px;
+
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.wrapper2{
+    position: absolute;
+    top:72%;
+    left: 0%;
+    height: 400px;
+
+    max-width: 50000px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+
+.wrapper .input {
+    width: 800px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.wrapper2 .inp{
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.wrapper3 .inpt{
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.wrapper4{
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0,0.6);
+    max-width: 50000px;
+    width: 90px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.wrapper .inptt{
+    width: 15%;
+    right: 4%
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.searchbtn {
+    background: #CE3F54   ;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.searchbtn .fas{
+	position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
